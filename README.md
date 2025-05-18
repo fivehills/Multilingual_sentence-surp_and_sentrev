@@ -22,7 +22,7 @@ The eye-tracking data used in this study is the Multilingual Eye-movement Corpus
 **Formula:**
 
 ```math
-Reading speed (wpm) = sent.nwords / (total fixation durations in one sentence / 60)
+Reading speed (wpm) = sent.nwords / (total\quad fixation\quad durations\quad in\quad one\quad sentence / 60)
 ```
 
 This calculation provides the reading speed in words per minute (wpm) for each sentence.
