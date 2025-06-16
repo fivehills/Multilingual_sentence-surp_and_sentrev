@@ -63,4 +63,4 @@ Sun, K., & Wang, R. (2025). Computational Sentence-level Metrics of Reading Spee
 ## Contact
 
 For questions or issues, contact the authors via the details provided in the paper.
-sharpksun@hotmail.com
+Email: sharpksun@hotmail.com
