@@ -1,4 +1,4 @@
-# Computational Sentence-level Metrics README
+# Computating Sentence-level Metrics 
 
 This repository contains code and data supporting the paper *"Computational Sentence-level Metrics of Reading Speed and its Ramifications for Sentence Comprehension"* by Kun Sun and Rong Wang, published in *Cognitive Science*.
 
@@ -29,11 +29,25 @@ This calculation provides the reading speed in words per minute (wpm) for each s
 
 ## Scripts
 
-### comput_sentrev.py
-This Python script computes **sentence relevance** (\( sentrev \)), a metric introduced in the paper. It calculates the semantic relationship between a target sentence and its surrounding context using a weighted sum of cosine similarities, based on a four-sentence sliding window.
+### comput_sent_semrev_BERT.py
+This Python script computes **sentencellevel semantic relevance** (\( sent_semrev \)) with BERT, a metric introduced in the paper. It calculates the semantic relationship between a target sentence and its surrounding context using a weighted sum of cosine similarities, based on a four-sentence sliding window.
 
-### comput_sentsurp.py
-This Python script computes **sentence surprisal** (\( sentsurp \)) with three methods (chain rule, negative likelihood, next sentence prediction), another metric proposed in the paper. It calculates the surprisal of a sentence given its preceding context, using the three methods to estimate the joint probability of the sentence’s tokens.
+
+### comput_sent_semrev_ST.py
+This Python script computes **sentencellevel semantic relevance** (\( sent_semrev \)) with Sentence Transformer, a metric which was not introduced in the paper. It calculates the semantic relationship between a target sentence and its surrounding context using a weighted sum of cosine similarities, based on a four-sentence sliding window.
+
+
+
+### comput_sentsurp_BETRT.py
+This Python script computes **sentence surprisal** (\( sentsurp \)) with two methods (chain rule, and negative likelihood) based on m_BERT, another metric proposed in the paper. It calculates the surprisal of a sentence given its preceding context, using the two methods to estimate the joint probability of the sentence’s tokens.
+
+
+### comput_sentsurp_NSP.py
+This Python script computes **sentence surprisal** (\( sentsurp \)) with the method of next sentence prediction based on m_BERT, another metric proposed in the paper. It calculates the surprisal of a sentence given its preceding context, using the methods to estimate the joint probability of the sentence’s tokens.
+
+
+### comput_sentsurp_GPT.py
+This Python script computes **sentence surprisal** (\( sentsurp \)) with two methods (chain rule, negative likelihood) based on mGPT, another metric proposed in the paper. It calculates the surprisal of a sentence given its preceding context, using the two methods to estimate the joint probability of the sentence’s tokens.
 
 ## Usage
 
