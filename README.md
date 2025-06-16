@@ -33,7 +33,7 @@ This calculation provides the reading speed in words per minute (wpm) for each s
 This Python script computes **sentence relevance** (\( sentrev \)), a metric introduced in the paper. It calculates the semantic relationship between a target sentence and its surrounding context using a weighted sum of cosine similarities, based on a four-sentence sliding window.
 
 ### comput_sentsurp.py
-This Python script computes **sentence surprisal** (\( sentsurp \)), another metric proposed in the paper. It calculates the surprisal of a sentence given its preceding context, using the chain rule to estimate the joint probability of the sentence’s tokens.
+This Python script computes **sentence surprisal** (\( sentsurp \)) with three methods (chain rule, negative likelihood, next sentence prediction), another metric proposed in the paper. It calculates the surprisal of a sentence given its preceding context, using the three methods to estimate the joint probability of the sentence’s tokens.
 
 ## Usage
 
